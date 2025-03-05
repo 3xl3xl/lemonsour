@@ -1,0 +1,29 @@
+cd ~/path/to/lemonsour
+code .  # これでVSCodeが現在のディレクトリを開きます
+cd ~/path/to/lemonsour
+code .  # これでVSCodeが現在のディレクトリを開きます
+rm -rf ~/path/to/dj-evaluation-app
+# すべての変更をステージング
+git add .
+
+# 変更をコミット
+git commit -m "英単語学習アプリの実装"
+
+# 変更をGitHubにプッシュ
+git push
+git remote -v
+git remote add origin [https://github.com/3xl3xl/lemonsour.git]
+git remote add origin https://github.com/3xl3xl/lemonsour.git
+git remote -v
+git branch
+git status
+cd ~/path/to/lemonsour
+
+git init
+
+git add .
+git --version
+xcode-select --install
+
+xcode-select --install
+
