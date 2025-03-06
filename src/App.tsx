@@ -18,24 +18,24 @@ function App() {
   const [detailedMeaning, setDetailedMeaning] = useState('');
   const [wordHistory, setWordHistory] = useState<WordCard[]>([]);
 
-  // APIリクエスト関数
-  const fetchMeaning = async (wordToSearch: string, isDetailed = false) => {
-    setLoading(true);
-    setError(null);
-    
-    try {
-      // モックデータを使用（本番では実際のAPIコールに置き換える）
-      const mockResponse = {
-        data: {
-          candidates: [{
-            content: {
-              parts: [{
-                text: `${wordToSearch}は、「テスト」や「挑戦」を意味する名詞・動詞です。例えば、"I accept this challenge"（この挑戦を受け入れる）のように使用されます。`
-              }]
-            }
-          }]
-        }
-      };
+// APIリクエスト関数
+const fetchMeaning = async (wordToSearch: string, isDetailed = false) => {
+  setLoading(true);
+  setError(null);
+  
+  try {
+    // モックデータを使用（本番では実際のAPIコールに置き換える）
+    const mockResponse = {
+      data: {
+        candidates: [{
+          content: {
+            parts: [{
+              text: `${wordToSearch}は、「テスト」や「挑戦」を意味する名詞・動詞です。例えば、"I accept this challenge"（この挑戦を受け入れる）のように使用されます。`
+            }]
+          }
+        }]
+      }
+    };
 
       const generatedText = mockResponse.data.candidates[0].content.parts[0].text;
 
