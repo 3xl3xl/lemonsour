@@ -59,8 +59,6 @@ function App() {
     }
   };
 
-  // ... (その他の関数は変更なし) ...
-
   return (
     <div className="app-container">
       <h1>英単語学習アプリ</h1>
