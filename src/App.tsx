@@ -24,10 +24,6 @@ function App() {
     setError(null);
     
     try {
-      const prompt = isDetailed
-        ? `英単語「${wordToSearch}」の意味、品詞、例文（3つ以上）、および類義語、反意語を日本語で詳しく説明してください。発音記号も含めてください。`
-        : `英単語「${wordToSearch}」の意味を日本語で簡潔に説明してください。品詞も含めてください。`;
-
       // モックデータを使用（本番では実際のAPIコールに置き換える）
       const mockResponse = {
         data: {
