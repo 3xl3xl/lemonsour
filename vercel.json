@@ -1,0 +1,14 @@
+{
+    "rewrites": [
+      { "source": "/api/(.*)", "destination": "/api/$1" }
+    ],
+    "functions": {
+      "api/**/*": {
+        "memory": 1024,
+        "maxDuration": 10
+      }
+    },
+    "env": {
+      "GEMINI_API_KEY": "@gemini_api_key"
+    }
+  }
